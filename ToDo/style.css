@@ -1,0 +1,176 @@
+body{
+    font-family: monospace;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.root{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0efe9;
+}
+.container{
+    display: block;
+    justify-content: center;
+    height: 75vh;
+    width: 22vw;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 1px black;
+}
+.data{
+    display: block;
+    height: 75%;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
+    
+}
+.date-container{
+    display: flex;
+    height: 8%;
+    width: 100%;
+    
+}
+.date{
+    display: flex;
+    height: 50px;
+    width: 100px;
+    
+}
+.date-left{
+    height: 100%;
+    width: 50%;
+}
+.date-right{
+    height: 100%;
+    width: 50%;
+}
+.day-number{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size:250%;
+    padding-left: 10px;
+}
+.month{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    width: 100%;
+    color: black;
+    font-size: 100%;
+}
+.year{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50%;
+    width: 100%;
+    color: black;
+    font-size: 96%;
+}
+.day-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    height: 100%;
+    width: 25%;
+    color: black;
+    font-size: 175%;
+}
+
+.list{
+    height: 92%;
+    width: 100%;
+    
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 5%;
+    
+}
+
+.list-item-content{
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    height: 100%;
+    width: 80%;
+    font-size: 125%;
+    
+}
+.check-input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1%;
+    height: 100%;
+    width: 20%;
+    
+}
+
+.check-input{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    appearance: none;
+    border: 2px solid lightgray;
+}
+
+.check-input:checked{
+    border: 2px solid lightgreen;
+    background-color: lightgreen;
+    
+}
+
+.form{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.text-input{
+    width: 60%;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-left: 2%;
+    padding-top: 2%;
+    outline: none;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    resize: none;
+}
+
+.add-button{
+    height: 25%;
+    margin-top: 2%;
+    margin-left: 5%;
+    background-color: transparent;
+    padding: 1% 5% 1% 5%;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.add-button:hover{
+    opacity: .8;
+    transition: .5s;
+}
+.add-button:active{
+    opacity: .6;
+    transition: .5s;
+}
