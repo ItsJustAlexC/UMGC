@@ -1,0 +1,31 @@
+mkdir first
+cd first
+touch person.txt
+mv person.txt another.txt
+cp another.txt copy.txt
+rm copy.txt
+cp -r ../first ../second
+rm -r ../second
+
+The 'man' command brings up an overview of the command you requested. The overview includes a description of what the commmand does aswell as options for that command.
+To scroll through the man page use the up and down arrow keys, and to exit you press q
+
+The -l flag for ls uses a long listing format. The -a flag for ls lists all items in a folder (including hidden items starting with .)
+
+To jump between words in the terminal you hold (for windows) ctrl + press left/ right arrow keys
+
+To move to the end of a line in the terminal you hold (for windows) ctrl + press 'e' key
+
+To move to the beginning of a line in the terminal you hold (for windows) ctrl + press 'a' key
+
+To delete a whole word without pressing backspace you hold (for windows) ctrl + press 'w' key
+
+A terminal is the window that houses a shell. The shell is the program the interprets and executes the commands.
+
+An absolute path is the full path name to the destination starting from the root.
+
+A relative path is the path name to the destination starting from the current working directory
+
+A flag is an optional addition to a command that alters how that command behaves. Example: ls -a, rm -f -r, and cat -A
+
+The -f flag and the -r flag for the rm command force ignores nonexistent files/ arguments and will never give a prompt while removing directories and their contents recursively
