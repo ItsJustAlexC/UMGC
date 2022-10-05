@@ -1,0 +1,6 @@
+git branch *branch name* or git checkout -b *branch name*
+?
+git checkout *branch name*
+git branch -d/-D *branch name*
+
+merge conflicts happen when 1 file is changed by more than one person at the same time and being committed
