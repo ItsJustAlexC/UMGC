@@ -166,6 +166,61 @@ function doubleOddNumbers(arr){
 }
 console.log(doubleOddNumbers([1,2,3,4,5,6]));
 
+//some every
+
+//hasOddNumber
+function hasOddNumber(arr){
+    return arr.some(el => {
+        return el % 2 == 1;
+    })
+}
+console.log(hasOddNumber([2,2,2,2,2,4]));
+
+//hasAZero
+function hasAZero(num){
+    let arr = [...num.toString()];
+    return arr.some(el => {
+        return el == 0;
+    })
+}
+
+console.log(hasAZero(1212121));
+
+//hasOnlyOddNumbers
+function hasOnlyOddNumbers(arr){
+    return arr.every(el => {
+        return el % 2 == 1;
+    })
+}
+
+console.log(hasOnlyOddNumbers([1,2,3,5,7]));
+
+//hasNoDuplicates
+function hasNoDuplicates(arr){
+    
+}
 
 
+//hasCertainKey
+function hasCertainKey(arr, key){
+    return arr.every(el => {
+        return key in el;
+    })
+}
+let arr = [
+    {title: "Instructor", first: 'Elie', last:"Schoppik"},
+    {title: "Instructor", first: 'Tim', last:"Garcia", isCatOwner: true},
+    {title: "Instructor", first: 'Matt', last:"Lane"},
+    {title: "Instructor", first: 'Colt', last:"Steele", isCatOwner: true}
+  ]
 
+console.log(hasCertainKey(arr,'isCatOwner'));
+
+//hasCertainValue
+function hasCertainValue(arr, key, value){
+    return arr.every(el => {
+        return el[key] === value;
+    })
+}
+
+console.log(hasCertainValue(arr,'first','Elie'))
