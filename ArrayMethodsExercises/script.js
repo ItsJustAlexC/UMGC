@@ -224,3 +224,34 @@ function hasCertainValue(arr, key, value){
 }
 
 console.log(hasCertainValue(arr,'first','Elie'))
+
+
+//find findIndex
+
+//findUserByUsername
+function findUserByUsername(arr, str){
+    return arr.find(el => {
+        return el['username'] == str
+    })
+}
+
+const users = [
+    {username: 'mlewis'},
+    {username: 'akagen'},
+    {username: 'msmith'}
+  ];
+
+console.log(findUserByUsername(users, 'mlewis'))
+
+//removeUser
+
+function removeUser(arr, str){
+    let idx = arr.findIndex(el => {
+        return el['username'] == str;
+    });
+
+    return idx != -1 ? arr.splice(idx, 1)[0] : undefined;
+}
+
+console.log(removeUser(users, 'akagen'));
+console.log(removeUser(users, 'akagen'));
