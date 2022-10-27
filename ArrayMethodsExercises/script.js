@@ -255,3 +255,42 @@ function removeUser(arr, str){
 
 console.log(removeUser(users, 'akagen'));
 console.log(removeUser(users, 'akagen'));
+
+//reduce
+
+//extractValue
+function extractValue(arr, str){
+    return arr.reduce((acc, val) => {
+        acc.push(val[str]);
+        return acc;
+    }, [])
+}
+const arr1 = [{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}]
+console.log(extractValue(arr1,'name'))
+
+//vowelCount
+
+function vowelCount(str){
+    let arr = [...str.toLowerCase()];
+    return arr.reduce((acc, val) => {
+        if(['a', 'e', 'i', 'o', 'u'].includes(val))
+                val in acc ? acc[val] += 1 : acc[val] = 1;
+        return acc;
+    }, {})
+}
+console.log(vowelCount('I Am awesome and so are you'));
+
+//addKeyAndValue
+
+function addKeyAndValue(arr, key, value){
+    return arr.reduce((acc, val) => {
+        val[key] = value;
+        acc.push(val)
+        return acc;
+    }, [])
+}
+const arr2 = [{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}];
+
+console.log(addKeyAndValue(arr2, 'title', 'Instructor'))
+
+//partition
